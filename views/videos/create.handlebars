@@ -1,0 +1,20 @@
+<div class="create-container">
+    <h2 class="form-title">Save a video</h2>
+    <form action="/videos" method="post">
+        <label class="form-label" for="title">Title</label>
+        <input id="title-input" name="title" maxlength="50" value="{{video.title}}"/>
+        {{#if video.errors.title}}
+        <div class="error">a Title is required</div>
+        {{/if}}
+        <label class="form-label" for="description">Description</label>
+        <textarea id="description-input" name="description">{{video.description}}</textarea>
+        <label class="form-label" for="url">Video Url</label>
+        <input id="url-input" name="url" maxlength="50" value="{{video.url}}"/>
+        {{#if video.errors.url}}
+        <div class="error">a URL is required</div>
+        {{/if}}
+        <button class="input-button" id="submit-button" type="submit">
+            <p>Save</p>
+        </button>
+    </form>
+</div>
