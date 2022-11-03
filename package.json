@@ -23,7 +23,7 @@
     "jsdom": "^9.12.0",
     "mocha": "^3.0.0",
     "supertest": "^3.0.0",
-    "wdio-mocha-framework": "^0.4.0",
+    "wdio-mocha-framework": "^0.6.4",
     "wdio-phantomjs-service": "^0.2.2",
     "wdio-spec-reporter": "^0.1.2",
     "webdriverio": "~4.2.3"
